@@ -9,6 +9,7 @@
     </head>
 <body>
     <div id="bloc_page">
+        
         <header>
            
                 <div class="logo">
@@ -32,51 +33,51 @@
                 <p id="headerp21">Trouvez votre hébergement pour des vacances de rêve</p>
                 <p id="headerp22">En plein centre ville ou en pleine nature</p>
             </div>
-            <div class="lieu">
-                
-                <form method="post" action="traitement.php">
-                    
-                        <label for="ville"></label>
-                        <input type="text" name="ville" id="ville" placeholder="Marseille, France" size="30"  /> <input type="submit" value="Rechercher" />
-                  
+
+
+            <div id="divButton">
+                <form method="post" action="traitement.php" class="header2form">
+                    <span class="header2formicon">
+                    <i id="mapmarker" class="fas fa-map-marker-alt searchFormWrapiconIcon" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" name="ville" id="ville" placeholder="Marseille, France" size="30"  /> 
                 </form>
+                <div id="div2Button">
+                    <button class="button_rechercher" type="button">Rechercher
+                    </button>
+                </div>
             </div>
+                     <!--<i class="fas fa-search" aria-hidden="true"></i> -->
         </section>
-            <!--
-            <div>
-               
-                    <div class="main_filtres">
-                        <p id="presentationfiltres">Filtres</p>
-                        <button class="boutons">
-                            <i class="fas fa-money-bill-wave fa-1x"></i>
-                            <p>Economique </p>
-                        </button>
-                        <button class="boutons">
-                            <i class="fas fa-child fa-1x"></i>
-                            <p> Familial</p>
-                        </button>
-                        <button class="boutons">
-                            <i class="fas fa-heart fa-1x"></i>
-                            <p>Romantique</p>
-                        </button>
-                        
-                            <button class="boutons"><i class="fas fa-dog fa-1x"></i><p>Animaux autorisés</p></button>
-                        </button>
+          
         
-                    </div>
+               
+            <div class="main_filtres">
+                <p id="presentationfiltres">Filtres</p>
+                    <button class="boutons">
+                        <i class="fas fa-money-bill-wave fa-1x"></i>
+                        <p>Economique </p>
+                    </button>
+                    <button class="boutons">
+                        <i class="fas fa-child fa-1x"></i>
+                        <p> Familial</p>
+                    </button>
+                    <button class="boutons">
+                        <i class="fas fa-heart fa-1x"></i>
+                        <p>Romantique</p>
+                    </button>
+                         <button class="boutons">
+                             <i class="fas fa-dog fa-1x"></i>
+                             <p>Animaux autorisés</p>
+                    </button>
+        
             </div>
-                <button class="boutons">
-            <img src="images/heart-solid.svg" alt="heart" class="filtres_svg" /> Animaux autorisés </button>
-                    <ul>
-                        <li><a href="#" class="economique"><i class="fas fa-money-bill-wave"></i>Economique</a></li>
-                        <li><a href="#" class="familial"><i class="fas fa-child"></i>Familial</a></li>
-                        <li><a href="#" class="Romantique"><i class="fas fa-heart"></i>Romantique</a></li>
-                        <li><a href="" class="animaux"><i class="fas fa-dog">Animaux autorisés</i></a></li>
-                    </ul>
-            -
-             <p class="info"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette villez</p>
-            </div>
-        </section>
+        
+        <div id="info">
+            
+             <p class="info"><i class="fas fa-info" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette villez</p>
+        </div>
+       
          
         <section class="hebergement">
             <div class="ville">
@@ -255,7 +256,7 @@
                  </div>
             </div>
 
-</header>
+        </header>
         <div id="container">
             <div class="item"></div>
             <div class="item"></div>
@@ -276,5 +277,6 @@
 
 
 
-        </section>
-        ->  
+    </div>
+        
+</body>
