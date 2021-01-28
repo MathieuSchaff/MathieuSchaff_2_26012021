@@ -11,56 +11,73 @@
     <div id="bloc_page">
         <header>
            
-            <div class="header">
-                <div class="child1">
-                    <h1><img src="images/logo/Reservia.svg" alt="logo" id="logo"/></h1> 
+                <div class="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo" id="logo"/>
                 </div>
-                <div class="child2">
-                    <nav>
+                <div class="navigation">
+                    
                     <ul>
-                        <li><a href="#">Hébergement</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a href="#" class="lien_overline">Hébergement</a></li>
+                        <li><a href="#" class="lien_overline">Activités</a></li>
                         <li><a href="#" class="inscrire">S'inscrire</a></li>
                     </ul>
                 </div>
-        </header>
+        </header>  
+      
+
+
+        
         <section class="header2">
-            <div>
-                <p>Trouvez votre hébergement pour des vacances de rêve</p>
-                <p id="headerp2">En plein centre ville ou en pleine nature</p>
+            <div class="introduction">
+                <p id="headerp21">Trouvez votre hébergement pour des vacances de rêve</p>
+                <p id="headerp22">En plein centre ville ou en pleine nature</p>
             </div>
-            <div>
+            <div class="lieu">
                 
                 <form method="post" action="traitement.php">
-                    <p><i class="fas fa-map-marker-alt"></i>
-                        <label for="ville">Votre pseudo :</label>
+                    
+                        <label for="ville"></label>
                         <input type="text" name="ville" id="ville" placeholder="Marseille, France" size="30"  /> <input type="submit" value="Rechercher" />
-                    </p>
+                  
                 </form>
             </div>
+        </section>
+            <!--
             <div>
-                <p>
-                    Filtres 
-
-                </p>
+               
+                    <div class="main_filtres">
+                        <p id="presentationfiltres">Filtres</p>
+                        <button class="boutons">
+                            <i class="fas fa-money-bill-wave fa-1x"></i>
+                            <p>Economique </p>
+                        </button>
+                        <button class="boutons">
+                            <i class="fas fa-child fa-1x"></i>
+                            <p> Familial</p>
+                        </button>
+                        <button class="boutons">
+                            <i class="fas fa-heart fa-1x"></i>
+                            <p>Romantique</p>
+                        </button>
+                        
+                            <button class="boutons"><i class="fas fa-dog fa-1x"></i><p>Animaux autorisés</p></button>
+                        </button>
+        
+                    </div>
+            </div>
+                <button class="boutons">
+            <img src="images/heart-solid.svg" alt="heart" class="filtres_svg" /> Animaux autorisés </button>
                     <ul>
                         <li><a href="#" class="economique"><i class="fas fa-money-bill-wave"></i>Economique</a></li>
                         <li><a href="#" class="familial"><i class="fas fa-child"></i>Familial</a></li>
                         <li><a href="#" class="Romantique"><i class="fas fa-heart"></i>Romantique</a></li>
                         <li><a href="" class="animaux"><i class="fas fa-dog">Animaux autorisés</i></a></li>
                     </ul>
-                </p>
-                <p class="info"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette villez</p>
+            -
+             <p class="info"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette villez</p>
             </div>
         </section>
-            <div class="main_filtres">
-                <p>Filtres</p>
-                <button class="boutons"><i class="fas fa-money-bill-wave fa-2x"></i><span>Economique</span></button>
-                <button class="boutons"><i class="fas fa-child fa-2x"></i>Familial</button>
-                <button class="boutons"><i class="fas fa-heart fa-2x"></i>Romantique</button>
-                <button class="boutons"><i class="fas fa-dog fa-2x"></i>Animaux autorisés</button>
-
-            </div>
+         
         <section class="hebergement">
             <div class="ville">
                <h1>Hébergement à Marseille</h1>
@@ -238,6 +255,19 @@
                  </div>
             </div>
 
+</header>
+        <div id="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+          
+          <div id="container">
+            <div class="item"></div>
+          </div>
+
 
 
 
@@ -247,4 +277,4 @@
 
 
         </section>
-       
+        ->  
