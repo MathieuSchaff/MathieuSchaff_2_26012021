@@ -1,0 +1,79 @@
+@media screen and (max-width: 991px) and (min-width: 701px)
+{
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_a{
+    display: none;
+}
+
+.nav_a:hover{
+    color: rgba(0, 101, 252, 1);
+    border-bottom: 3px rgba(0, 101, 252, 1) solid;
+    border-top:none;
+ } 
+ .nav_a{
+    border-top: none;
+    border-bottom: 3px solid transparent;
+    width: 50%;
+ }
+ .search{
+ display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+#hebergement{
+    display: flex;
+    flex-direction: column-reverse
+    }
+
+        #hebergement_1{
+        width: 100%;
+        }
+        #populaire {
+         margin-left: 0px;
+        width: 100%;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        }
+        .populaire_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            }
+        .div_pop{
+        height: 200px;
+        width: 60%;
+        margin: 0.5em;
+        display: flex;
+        flex-direction: row;
+        }
+        .ligne{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        .ligne1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .ligne2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .div_heb{
+            width: 80%;
+            margin: 10px 10px;
+        }
+}
