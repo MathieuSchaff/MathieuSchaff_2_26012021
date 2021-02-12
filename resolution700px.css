@@ -175,6 +175,7 @@ display: none;
   margin-left: 0px;
  width: 95%;
  padding-bottom: 2rem;
+ margin-bottom: 2rem;
  display: flex;
  flex-direction: column;
  }
@@ -192,7 +193,30 @@ display: none;
  display: flex;
  flex-direction: row;
  }
-
+ #activites{
+  display: grid;
+  grid-gap:10px;
+  height: 1600px;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-template-rows: 100px repeat(6,1fr);
+  grid-template-areas: 
+  "ta"
+  "a1" 
+  "a2"
+  "a3"
+  "a4"
+  "a5"
+  "a6"
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
 
 
 

@@ -1,5 +1,9 @@
 @media screen and (max-width: 991px) and (min-width: 701px)
 {
+    body {
+        margin-right: 0%;
+    margin-left: 0%;
+    }
 header{
     display: flex;
     flex-direction: column;
@@ -30,7 +34,6 @@ text-align: center;
     display: flex;
     flex-direction: column-reverse
     }
-
         #hebergement_1{
         width: 100%;
         }
@@ -40,8 +43,9 @@ text-align: center;
         padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
         }
-        .populaire_content {
+.populaire_content {
         width: 100%;
         height: 100%;
         display: flex;
@@ -76,4 +80,22 @@ text-align: center;
             width: 80%;
             margin: 10px 10px;
         }
+#activites{
+            display: grid;
+            grid-gap:10px;
+            height: 1600px;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "ta ta"
+            "a1 a2"
+            "a1 a2"
+            "a1 a2"
+            "a1 a3"
+            "a4 a5"
+            "a4 a5"
+            "a4 a6"
+            "a4 a6"
+}
 }

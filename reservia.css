@@ -22,7 +22,6 @@ header {
     display: none;
 }
 .nav{
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,18 +60,15 @@ header a{
 .logo{
    height: 100%;
     grid-area: logo;
- 
 }
 header
 {
-    
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: nav;
-   
 }
 .sub {
     display: flex;
@@ -95,7 +91,6 @@ margin: 0%;
     align-items: center;
     justify-content: center;
 }
-
 .nav_a:hover{
     color: rgba(0, 101, 252, 1);
     border-top: 3px rgba(0, 101, 252, 1) solid;
@@ -272,12 +267,20 @@ font-size: 1.2em;
 .hostingMainCardGradeIcon[data-active=true]{
 color:#0065FC;
 }
+
 #hebergement{
 display: flex;
+justify-content: space-between;
 width: 100%;
+}
+#hebergement h1{
+    font-size: 2em;
 }
 #hebergement span {
     font-weight: bold;
+}
+.content_heb {
+    font-size: 1.5em;
 }
 #hebergement_1{
     display: flex;
@@ -298,7 +301,7 @@ width: 100%;
 }
 #find_more a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: black;
 }
@@ -359,10 +362,10 @@ width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     width: 30%;
-    margin-left: 3rem;
+    
 }
 #populaire h1{
   display: flex;
@@ -415,5 +418,117 @@ font-size: 1.2em;
 }
 .content_populaire_bold{
     font-size: 1.2em;
-   
+}
+
+
+
+#activites{
+    margin-top: 20px;
+display: grid;
+grid-gap:10px;
+height: 800px;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+grid-column-gap: 20px;
+grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"ta ta ta ta"
+"a1 a2 a4 a5"
+"a1 a2 a4 a5"
+"a1 a2 a4 a6"
+"a1 a3 a4 a6"
+
+}
+.contentactivites{
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(250, 255, 255);
+   border-radius: 15px 15px 15px 15px;
+   box-shadow: 0px 5px 5px black;
+}
+.activites_title{
+    grid-area: ta;
+    font-size: 2em;
+    margin-left: 20px;
+}
+.a1{
+    grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+}
+.a4{
+    grid-area: a4;
+}
+.a5{
+    grid-area: a5;
+}
+.a6{
+    grid-area: a6;
+}
+.background_act{
+  
+    border-radius: 15px 15px 0px 0px;
+}
+.contentactivitesw {
+    line-height: 5;
+    margin-left: 10px;
+}
+
+.ba1{
+background: url('images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+height: 90%;
+background-position: center;
+background-size: cover;
+border-radius: 15px 15px 0px 0px;
+}
+.ba2{
+    background: url('images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    height: 90%;
+background-position: center;
+background-size: cover;
+}
+.ba3{
+    background: url('images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    height: 90%;
+background-position: center;
+background-size: cover;
+}
+.ba4{
+    background: url('images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    height: 90%;
+background-position: center;
+background-size: cover;
+}
+.ba5{
+    background: url('images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    height: 90%;
+background-position: center;
+background-size: cover;
+}
+.ba6{
+    background: url('images/activites/2_large//lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    height: 90%;
+background-position: center;
+background-size: cover;
+}
+footer{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 2em;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+footer a{
+    text-decoration: none;
+    color: black;
 }
