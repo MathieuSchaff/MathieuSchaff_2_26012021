@@ -1,6 +1,6 @@
 @media screen and (max-width: 991px) and (min-width: 701px)
 {
-    body {
+    #bloc_page{
         margin-right: 0%;
     margin-left: 0%;
     }
@@ -23,6 +23,11 @@ header{
     border-bottom: 3px solid transparent;
     width: 50%;
  }
+ .nav_a.selected{
+    color: rgba(0, 101, 252, 1);
+    border-bottom: 3px rgba(0, 101, 252, 1) solid;
+    border-top:none;
+ }
  .search{
  display: flex;
 flex-direction: column;
@@ -30,12 +35,22 @@ align-items: center;
 justify-content: center;
 text-align: center;
 }
+#main_filtres_text {
+    margin-left: 1.5em;
+}
 #hebergement{
     display: flex;
     flex-direction: column-reverse
     }
         #hebergement_1{
         width: 100%;
+        padding: 0;
+        }
+        #hebergement_1 h1 {
+            margin-left: 2em;
+        }
+        #find_more{
+            margin-left: 2em;
         }
         #populaire {
          margin-left: 0px;
@@ -52,10 +67,14 @@ text-align: center;
         flex-direction: column;
         align-items: center;
             }
-        .div_pop{
-        height: 200px;
+            .ap1{
+                height: 160px;
         width: 60%;
         margin: 0.5em;
+            }
+        .div_pop{
+        
+     
         display: flex;
         flex-direction: row;
         }

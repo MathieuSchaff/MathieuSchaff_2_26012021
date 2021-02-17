@@ -1,6 +1,6 @@
 @media screen and (max-width: 1440px) and (min-width: 992px)
 {
-body {
+    #bloc_page{
     margin-right: 5%;
 margin-left: 5%;
 }
@@ -10,7 +10,13 @@ flex-direction: column-reverse;
 }
 #hebergement_1{
 width: 100%;
-
+padding: 0;
+}
+#hebergement_1 h1 {
+    margin-left: 2em;
+}
+#find_more{
+    margin-left: 2em;
 }
 .ligne{
     display: flex;
@@ -45,9 +51,11 @@ height: 100%;
 display: flex;
 flex-direction: row;
     }
+.ap1{
+    height: 200px;
+    width: 30%;
+}
 .div_pop{
-height: 200px;
-width: 30%;
 display: flex;
 flex-direction: row;
 }

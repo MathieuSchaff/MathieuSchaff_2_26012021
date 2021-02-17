@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px)
 {
-body{
+#bloc_page{
    width: 100%;
 margin-right: 0%;
 margin-left: 0%;    
@@ -16,7 +16,7 @@ font-weight: bold;
 font-size: 1.2em;
   text-decoration: none;
   color:black;
-  padding: 35px;
+  padding: 30px 0px;
 }
 .nav{
   
@@ -60,7 +60,11 @@ font-size: 1.2em;
   border-bottom: 3px rgba(0, 101, 252, 1) solid;
   border-top:none;
 } 
-
+.nav_a.selected{
+  color: rgba(0, 101, 252, 1);
+  border-bottom: 3px rgba(0, 101, 252, 1) solid;
+  border-top:none;
+}
 .search{
 display: flex;
 flex-direction: column;
@@ -87,12 +91,20 @@ text-align: center;
 input#ville{
 padding:0;
 font-size: 1em;
-width: 10em;
+}
+.form{
+  width: 90vw;
+  max-width: 400px;
 }
 .searchButton{
+  flex-shrink: 0;
   width: 3em;
 }
+input#ville{
+  width: 100%;
+}
 .searchIcon{
+  flex-shrink: 0;
   width: 4em;
 }
 .searchButton i{
@@ -103,7 +115,7 @@ background-color: transparent;
 display: none;
 }
 #main_filtres_text {
-  margin-left: 10%;
+  margin-left: 1.5em;
   margin-top: 0;
  margin-bottom: 0;
 }
@@ -125,8 +137,15 @@ display: none;
   }
   #hebergement_1 {
     width: 95%;
+    padding: 0;
+    background-color: transparent;
   }
-  
+  #hebergement_1 h1 {
+    margin-left: 2em;
+}
+#find_more{
+    margin-left: 2em;
+}
   .ligne{
     display: flex;
     flex-direction: column;
@@ -137,7 +156,6 @@ display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 .ligne2 {
     display: flex;
@@ -148,32 +166,24 @@ display: none;
   width: 80%;
   margin: 10px 10px;
 }
-
 .populaire_content {
-  width: 100%;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
       }
+.ap1{
+height: 25vh;
+width: 85%;
+margin: 0.5em;
+      }
   .div_pop{
-  height: 200px;
-  width: 60%;
-  margin: 0.5em;
   display: flex;
   flex-direction: row;
-  }
-
-
-
-
-
-
-
 }
 #populaire {
-  margin-left: 0px;
- width: 95%;
+ 
+ width: 100%;
  padding-bottom: 2rem;
  margin-bottom: 2rem;
  display: flex;
@@ -185,21 +195,14 @@ display: none;
  display: flex;
  flex-direction: column;
  align-items: center;
-     }
- .div_pop{
- height: 200px;
- width: 80%;
- margin: 0.5em;
- display: flex;
- flex-direction: row;
- }
+}
  #activites{
   display: grid;
   grid-gap:10px;
   height: 1600px;
   grid-template-columns: 1fr;
   grid-column-gap: 20px;
-  grid-template-rows: 100px repeat(6,1fr);
+  grid-template-rows: auto repeat(6,1fr);
   grid-template-areas: 
   "ta"
   "a1" 
@@ -217,11 +220,8 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
+.ca1, .ca4 {
+  padding-top: 0;
 
 /*  avec grid
  header{
